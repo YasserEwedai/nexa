@@ -5,12 +5,46 @@ import { motion, type Transition } from "framer-motion";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
-const icons = [
-  "/images/imgeicon/Amazon_logo.svg",
-  "/images/imgeicon/Google_2015_logo.svg",
-  "/images/imgeicon/IBM_logo.svg",
-  "/images/imgeicon/Netflix_2015_logo.svg",
-  "/images/imgeicon/Slack_Technologies_Logo.svg",
+import {
+  SiStripe,
+  SiPaypal,
+  SiVisa,
+  SiGooglecloud,
+  SiGithub,
+  SiGitlab,
+} from "react-icons/si";
+
+import { FaMicrosoft } from "react-icons/fa";
+
+const partners = [
+  {
+    name: "Stripe",
+    icon: SiStripe,
+  },
+  {
+    name: "PayPal",
+    icon: SiPaypal,
+  },
+  {
+    name: "Visa",
+    icon: SiVisa,
+  },
+  {
+    name: "Google Cloud",
+    icon: SiGooglecloud,
+  },
+  {
+    name: "Microsoft Azure",
+    icon: FaMicrosoft,
+  },
+  {
+    name: "GitHub",
+    icon: SiGithub,
+  },
+  {
+    name: "GitLab",
+    icon: SiGitlab,
+  },
 ];
 
 const baseTransition: Transition = {
@@ -59,7 +93,9 @@ export default function Hero() {
           className="text-4xl md:text-5xl font-bold leading-tight mb-2"
         >
           {t("hero.titleLine1")}
+
           <br />
+
           {t("hero.titleLine2")}
         </motion.h1>
 
@@ -82,12 +118,12 @@ export default function Hero() {
           <Link
             href="/contact"
             className="
-            inline-block 
-            px-8 
-            py-3 
+            inline-block
+            px-8
+            py-3
             rounded-full
             bg-[#A78C35]
-            text-white 
+            text-white
             mb-4
             transition-all
             duration-300
@@ -115,39 +151,44 @@ export default function Hero() {
 
         <div className="w-full relative overflow-visible">
           <motion.div
-            className="flex gap-10 justify-center flex-wrap items-center"
+            className="flex gap-6 justify-center flex-wrap items-center"
             initial={{ y: 60, opacity: 0, scale: 0.6 }}
             whileInView={{ y: 120, opacity: 1, scale: 1 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={baseTransition}
           >
-            {icons.map((icon, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, scale: 0.6 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true, amount: 0.4 }}
-                transition={baseTransition}
-                className="
-                w-32 
-                h-24 
-                rounded-xl 
-                bg-white/5 
-                border 
-                border-white/10 
-                flex 
-                items-center 
-                justify-center"
-              >
-                <Image
-                  src={icon}
-                  alt="Company Logo"
-                  width={100}
-                  height={60}
-                  className="object-contain"
-                />
-              </motion.div>
-            ))}
+            {partners.map((partner, i) => {
+              const Icon = partner.icon;
+
+              return (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, scale: 0.6 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true, amount: 0.4 }}
+                  transition={baseTransition}
+                  className="
+                  w-40
+                  h-28
+                  rounded-xl
+                  bg-white/5
+                  border
+                  border-white/10
+                  flex
+                  flex-col
+                  items-center
+                  justify-center
+                  gap-3
+                  hover:bg-white/10
+                  transition-all
+                  duration-300"
+                >
+                  <Icon className="text-4xl text-[#D4AF37]" />
+
+                  <span className="text-sm text-gray-300">{partner.name}</span>
+                </motion.div>
+              );
+            })}
           </motion.div>
         </div>
       </div>
