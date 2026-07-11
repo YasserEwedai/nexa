@@ -1,9 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
+import { motion, type Transition } from "framer-motion";
 
 const icons = [
   "/images/imgeicon/Amazon_logo.svg",
@@ -13,9 +12,10 @@ const icons = [
   "/images/imgeicon/Slack_Technologies_Logo.svg",
 ];
 
-const baseTransition = {
+
+const baseTransition: Transition = {
   duration: 1,
-  ease: "easeInOut",
+  ease: [0.25, 0.1, 0.25, 1],
 };
 
 export default function Hero() {
