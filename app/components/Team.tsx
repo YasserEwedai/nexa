@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, type Transition } from "framer-motion";
 import {
   FaFacebookF,
   FaPinterestP,
@@ -37,7 +37,7 @@ const leftItem = {
   },
 };
 
-const leftTransition = {
+const leftTransition: Transition = {
   type: "spring",
   stiffness: 110,
   damping: 14,

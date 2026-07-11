@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { motion, type Transition } from "framer-motion";
+import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const icons = [
   "/images/imgeicon/Amazon_logo.svg",
@@ -11,7 +12,6 @@ const icons = [
   "/images/imgeicon/Netflix_2015_logo.svg",
   "/images/imgeicon/Slack_Technologies_Logo.svg",
 ];
-
 
 const baseTransition: Transition = {
   duration: 1,
