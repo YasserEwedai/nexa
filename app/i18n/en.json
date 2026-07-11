@@ -1,0 +1,413 @@
+{
+  "footer": {
+    "team": "Nexa Team",
+    "description": "We have rapidly grown into a trusted partner for organizations seeking digital transformation, enhanced operational efficiency.",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "pricing": "Pricing Plan",
+    "contactUs": "Contact Us",
+    "contact": "Contact",
+    "phone": "Phone",
+    "email": "Email",
+    "newsletter": "Newsletter",
+    "copyright": "Copyright © 2026 NEXATEAM. All Rights Reserved."
+  },
+
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "label": "FAQs",
+    "items": [
+      {
+        "q": "What Services Does Portal Offer?",
+        "a": "We provide a wide range of IT services including digital transformation solutions, cybersecurity services, IT consulting, managed IT services, and custom software development."
+      },
+      {
+        "q": "How Long Has Portal Been In Business?",
+        "a": "We provide a wide range of IT services including digital transformation solutions, cybersecurity services, IT consulting, managed IT services, and custom software development."
+      },
+      {
+        "q": "What Industries Does Portal Serve?",
+        "a": "We provide a wide range of IT services including digital transformation solutions, cybersecurity services, IT consulting, managed IT services, and custom software development."
+      },
+      {
+        "q": "What Cybersecurity Services Does Portal Provide?",
+        "a": "We provide a wide range of IT services including digital transformation solutions, cybersecurity services, IT consulting, managed IT services, and custom software development."
+      },
+      {
+        "q": "Does Portal Provide IT Consulting Services?",
+        "a": "We provide a wide range of IT services including digital transformation solutions, cybersecurity services, IT consulting, managed IT services, and custom software development."
+      }
+    ]
+  },
+
+  "counter": {
+    "experience": "Years of Experience"
+  },
+
+  "navbar": {
+    "logo": "Nexa Team",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "team": "Our Team",
+    "contact": "Contact",
+    "training": "Training",
+    "chooseUs": "Choose Us",
+    "latestArticle": "Latest Article",
+    "faqs": "FAQs",
+    "freeConsultation": "Free Consultation"
+  },
+
+  "hero": {
+  "label": "IT Evolution",
+  "titleLine1": "Building the Future of Business with Digital",
+  "titleLine2": "Solutions and Technical Training",
+  "description": "At Nexa, we help companies and organizations accelerate digital transformation through product development, integrated technology solutions, creative services, and practical training in technology and freelancing skills.",
+  "button": "Get Started",
+  "partnership": "Our Trusted Partnership"
+  },
+
+  "abouts": {
+    "label": "About Us",
+    "title": "Driving Business Growth Through Smart Solutions",
+    "description": "We combine technology, business expertise, and practical solutions to help organizations improve performance, overcome challenges, and achieve sustainable growth.",
+    "items": [
+      "Tailored Business Solutions",
+      "Technology That Simplifies Work",
+      "Consulting with Clear Direction",
+      "Training That Builds Capability"
+    ],
+    "learnMore": "Learn More",
+    "services": "Our Services"
+  },
+
+  "services": {
+  "label": "Our Services",
+  "titleLine1": "Smart Solutions Built for Business",
+  "titleLine2": "Growth",
+  "description": "Our success is measured by the success of our clients. Together, we create smarter businesses, stronger teams, and lasting value.",
+  "learnMore": "Learn More",
+  "allServices": "All Services",
+  "items": [
+      {
+        "title": "Mobile App Development",
+        "desc": "Native and cross-platform mobile applications for Android and iOS using Flutter, React Native, Kotlin, and Swift."
+      },
+      {
+        "title": "Desktop Software Development",
+        "desc": "Windows, macOS, and Linux desktop applications for businesses, institutions, and industrial operations."
+      },
+      {
+        "title": "Web & Product Development",
+        "desc": "Corporate websites, web applications, SaaS platforms, dashboards, admin panels, APIs, ERP, CRM, and custom business systems."
+      },
+      {
+        "title": "E-Commerce Solutions",
+        "desc": "Online stores, marketplaces, payment gateway integration, inventory management, and order management systems."
+      },
+      {
+        "title": "Delivery & Logistics Systems",
+        "desc": "Food delivery, courier services, fleet management, driver applications, real-time tracking, and dispatch systems."
+      },
+      {
+        "title": "HR & Business Management Systems",
+        "desc": "Human resources, attendance, payroll, recruitment, employee management, performance tracking, and workflow automation."
+      },
+      {
+        "title": "Accounting & Financial Systems",
+        "desc": "Accounting software, invoicing, POS systems, inventory management, financial reporting, and ERP solutions."
+      },
+      {
+        "title": "Design & Branding",
+        "desc": "UX/UI design, branding, graphic design, motion graphics, video editing, photography, and marketing assets."
+      },
+      {
+        "title": "Digital Marketing & Growth",
+        "desc": "Social media management, content creation, SEO, paid advertising, email marketing, analytics, and conversion optimization."
+      },
+      {
+        "title": "Quality Assurance & Cybersecurity",
+        "desc": "Software testing, QA automation, penetration testing, cybersecurity awareness, network infrastructure, and secure software practices."
+      },
+      {
+        "title": "Data & Artificial Intelligence",
+        "desc": "AI applications, machine learning, data analytics, dashboards, business intelligence, and automation solutions."
+      },
+      {
+        "title": "Professional Training",
+        "desc": "Technical bootcamps, corporate training, programming, networking, cybersecurity, freelancing, and career development."
+      },
+      {
+        "title": "IT Consulting",
+        "desc": "Digital transformation, business analysis, software architecture, technology selection, project planning, and technical consulting."
+      }
+    ]
+  },
+
+  "chooseUs": {
+  "label": "Why Choose Us",
+  "title": "Magic Behind Our IT Solutions",
+  "description": "We begin by conducting a comprehensive needs assessment to understand your specific requirements, challenges, and goals.",
+  "cards": {
+    "technical": {
+      "title": "Technical Expertise",
+      "desc": "A reputable IT company should possess a high level of technical expertise."
+    },
+    "innovation": {
+      "title": "Innovation & Adaptability",
+      "desc": "We create flexible solutions that adapt to changing business requirements."
+    },
+    "communication": {
+      "title": "Effective Communication",
+      "desc": "Clear communication helps build successful partnerships and projects."
+    },
+    "security": {
+      "title": "Security and Compliance",
+      "desc": "We prioritize cybersecurity and data protection."
+    }
+  }
+  },
+
+  "stats": {
+    "projects": "Projects Delivered",
+    "clients": "Happy Clients",
+    "experience": "Years Experience",
+    "support": "Support Hours"
+  },
+
+  "blog": {
+    "label": "Latest Article",
+    "title": "Checkout Our Latest Blog Posts",
+    "description": "Nulla viverra libero id ante finibus pulvinar. Nunc ultrices aliquam enim sed sodales.",
+    "button": "See More",
+    "readMore": "Read More",
+    "posts": [
+      {
+        "category": "Fintech",
+        "author": "mpirtm",
+        "date": "May 28, 2025",
+        "title": "Tips and Detailed Insights For Your Social Media",
+        "desc": "Proin iaculis sem eu ex eleifend, non condimentum mi ornare. Nam a blandit augue."
+      },
+      {
+        "category": "Tech",
+        "author": "mpirtm",
+        "date": "May 28, 2025",
+        "title": "Breaks Barriers with New Cybersecurity Advancements",
+        "desc": "Proin iaculis sem eu ex eleifend, non condimentum mi ornare. Nam a blandit augue."
+      },
+      {
+        "category": "Company",
+        "author": "mpirtm",
+        "date": "May 28, 2025",
+        "title": "Expands Reach with Strategic Acquisition of Tech Startup",
+        "desc": "Proin iaculis sem eu ex eleifend, non condimentum mi ornare. Nam a blandit augue."
+      }
+    ]
+  },
+
+  "heroBanner": {
+    "label": "Unlock Efficiency",
+    "title": "Drive Innovation With Our IT Services",
+    "description": "We provide reliable technology solutions that help businesses improve performance, increase efficiency, and achieve digital growth.",
+    "button": "Contact Us"
+  },
+
+  "contact": {
+    "label": "Contact Us",
+    "titleLine1": "Let’s Build Something",
+    "titleLine2": "Great Together",
+    "description": "Have a project in mind? Contact us and let's create a solution that fits your business needs.",
+
+    "cards": {
+      "address": "Address",
+      "addressValue": "Tanta, Egypt",
+      "call": "Call Us",
+      "phone": "01505294544",
+      "email": "Email Us",
+      "emailValue": "info@believe-agency.net",
+      "whatsapp": "WhatsApp",
+      "whatsappValue": "+20 150 529 4544"
+    },
+
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "phone": "Your Phone",
+      "message": "Your Message",
+      "send": "Send Message",
+      "sending": "Sending..."
+    },
+
+    "errors": {
+      "name": "Please enter your name",
+      "email": "Please enter your email address",
+      "phone": "Please enter your phone number",
+      "message": "Please enter your message"
+    },
+
+    "messages": {
+      "success": "Your message has been sent successfully.",
+      "failed": "Failed to send message.",
+      "error": "Something went wrong."
+    },
+
+    "agency": {
+      "label": "Creative Digital Agency",
+      "name": "Believe Agency"
+    }
+  },
+
+  "projects": {
+    "hero": {
+    "label": "Our Projects",
+    "title": "Building Digital Solutions That Make A Difference",
+    "description": "Explore our latest projects and technology solutions that help businesses grow and achieve digital transformation."
+  },
+
+  "intro": {
+    "title": "Projects That Reflect Our Expertise",
+    "description": "We develop reliable technology solutions using modern development practices to solve real business challenges."
+  },
+
+    "cards": [
+      {
+        "category": "Web Application",
+        "title": "Enterprise Management System",
+        "desc": "A complete business management platform designed to improve workflow, automation, and productivity."
+      },
+      {
+        "category": "Cyber Security",
+        "title": "Cyber Security Platform",
+        "desc": "Advanced security solutions that protect digital infrastructure and sensitive business data."
+      },
+      {
+        "category": "Mobile Application",
+        "title": "Mobile Application",
+        "desc": "Modern mobile solutions with a seamless user experience and powerful backend integration."
+      }
+    ],
+
+    "technologies": {
+      "title": "Technologies We Use"
+    },
+    "cta": {
+    "title": "Have A Project In Mind?",
+    "description": "Let's create a technology solution that fits your business needs.",
+    "button": "Start Your Project"
+  }
+      
+  },
+
+  "team": {
+    "label": "Expert Team",
+    "titleLine1": "Get To Know Our",
+    "titleLine2": "IT Professionals Team",
+    "description": "Our success is built together, and we help our community become a better place to live and work.",
+    "button": "View All"
+  },
+
+  "about": {
+
+    "hero": {
+      "label": "Who We Are",
+      "title": "Driving Digital Innovation Through Technology",
+      "desc": "We help organizations transform ideas into reliable digital solutions through modern technology, secure systems, and professional expertise."
+    },
+
+    "services": {
+      "label": "Our Services",
+      "title": "Technology Solutions That Drive Growth",
+      "desc": "We provide secure, scalable, and customized technology solutions that help businesses improve performance and achieve digital transformation."
+    },
+
+    "purpose": {
+      "label": "Our Purpose",
+      "title": "Mission & Vision",
+      "desc": "Our goals define the way we create innovative solutions and build long-term partnerships."
+    },
+
+
+    "mission": {
+      "title": "Our Mission",
+      "desc": "Deliver innovative technology solutions that simplify operations, improve productivity, and help businesses achieve their goals."
+    },
+
+
+    "vision": {
+      "title": "Our Vision",
+      "desc": "Become a trusted technology partner by creating secure, smart, and reliable digital solutions."
+    },
+
+
+    "choose": {
+
+      "label": "Why Choose Us",
+      "title": "Building Solutions That Make A Difference",
+      "desc": "We combine experience, technology, and customer-focused strategies to deliver reliable solutions.",
+
+
+      "team": {
+        "title": "Professional Team",
+        "desc": "Experienced specialists delivering reliable and high-quality technology solutions."
+      },
+
+      "technology": {
+        "title": "Modern Technology",
+        "desc": "Using advanced tools and technologies to build scalable digital systems."
+      },
+
+      "support": {
+        "title": "Reliable Support",
+        "desc": "Providing continuous technical support to maintain system performance."
+      },
+
+      "customer": {
+        "title": "Customer Focus",
+        "desc": "Designing solutions based on your business needs and objectives."
+      }
+
+    },
+
+
+    "statistics": {
+
+      "label": "Our Achievements",
+      "title": "Numbers That Reflect Our Success",
+      "desc": "Our experience and completed projects demonstrate our commitment to delivering quality solutions.",
+
+      "projects": "Completed Projects",
+      "clients": "Business Clients",
+      "experience": "Years Experience",
+      "satisfaction": "Client Satisfaction"
+
+    },
+
+
+    "process": {
+
+      "label": "Our Process",
+      "title": "A Simple Approach To Digital Success",
+      "desc": "We follow a clear process to understand requirements, develop solutions, and provide continuous support.",
+
+      "analysis": "Requirement Analysis",
+      "planning": "Project Planning",
+      "development": "Development & Testing",
+      "support": "Support & Maintenance"
+
+    },
+
+
+    "cta": {
+
+      "title": "Let's Build Your Digital Future",
+      "desc": "Partner with us to create secure, scalable, and effective technology solutions that support your business growth.",
+      "button": "Get Started"
+
+    }
+
+  }
+}
