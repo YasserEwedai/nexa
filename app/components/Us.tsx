@@ -35,7 +35,7 @@ export default function Us() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.6 }}
-          className="w-full max-w-3xl p-4 sm:p-8 text-center space-y-5 sm:space-y-6"
+          className="w-full max-w-3xl mx-auto p-4 sm:p-8 text-start sm:text-center space-y-5 sm:space-y-6"
         >
           <div className="bg-[linear-gradient(to_right,#5A4526,#D4AF37,#2F2F2F)] p-[1px] rounded-[8px] inline-block">
             <div className="bg-[#070A12] rounded-[7px] py-2 px-4 text-white text-sm">
@@ -45,7 +45,7 @@ export default function Us() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white capitalize">
             {t("chooseUs.title")}
           </h2>
-          <p className="text-gray-400 text-sm leading-relaxed max-w-xl mx-auto">
+          <p className="text-gray-400 text-sm leading-relaxed max-w-xl sm:mx-auto">
             {t("chooseUs.description")}
           </p>
         </motion.div>
