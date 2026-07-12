@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
-
+import Image from "next/image";
 export default function Navbar() {
   const [openOther, setOpenOther] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -85,11 +85,15 @@ export default function Navbar() {
       <div className="backdrop-blur-md bg-[#070A12]/70 border-b border-white/10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16 h-16 flex items-center justify-between gap-4">
           {/* Logo */}
-          <Link
-            href="/"
-            className="text-white font-bold text-base sm:text-lg shrink-0"
-          >
-            {t("navbar.logo")}
+          <Link href="/" className="shrink-0">
+            <Image
+              src="/public/images/logo.jpeg"
+              alt="Nexa Team"
+              width={150}
+              height={45}
+              priority
+              className="h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop nav (lg and up) */}
