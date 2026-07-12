@@ -71,8 +71,8 @@ export default function Navbar() {
             <Image
               src="/images/logo.png"
               alt="Nexa Team"
-              width={300}
-              height={45}
+              width={200}
+              height={120}
               priority
               className="h-10 w-auto"
             />
