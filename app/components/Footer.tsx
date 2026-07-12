@@ -20,14 +20,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-[1.6fr_1fr_1fr_1fr] gap-8 items-start">
           {/* Column 1 */}
           <motion.div className="min-w-0">
-            <Link href="/" className="inline-block">
+            <Link href="/" className="shrink-0">
               <Image
                 src="/images/logo.png"
                 alt="Nexa Team"
                 width={250}
                 height={120}
                 priority
-                className="w-[250px] md:w-[260px] lg:w-[280px] h-auto"
+                className="w-[250px] h-auto object-contain"
               />
             </Link>
 
