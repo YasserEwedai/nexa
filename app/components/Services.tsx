@@ -35,7 +35,7 @@ export default function Services({
   return (
     <section className="py-20 px-4 sm:px-6 text-white">
       <div className="max-w-[1400px] mx-auto flex flex-col gap-14">
-        <div className="text-center flex flex-col items-center gap-5">
+        <div className="text-start sm:text-center flex flex-col items-start sm:items-center gap-5">
           <div className="bg-[linear-gradient(to_right,#5A4526,#D4AF37,#2F2F2F)] p-[1px] rounded-full w-fit">
             <div className="px-6 py-2 bg-[#070A12] rounded-full text-sm text-white/90">
               {t("services.label")}
