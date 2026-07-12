@@ -17,14 +17,16 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Column 1 */}
           <motion.div>
-            <Image
-              src="/images/logo.png"
-              alt="Nexa Team"
-              width={160}
-              height={50}
-              priority
-              className="h-12 w-auto mb-3 transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer"
-            />
+            <Link href="/" className="shrink-0">
+              <Image
+                src="/images/logo.png"
+                alt="Nexa Team"
+                width={200}
+                height={120}
+                priority
+                className="w-[200px] h-[120px] object-contain"
+              />
+            </Link>
             <p className="text-white/80 text-sm leading-relaxed transition-all duration-300 hover:text-[#D4AF37] hover:scale-[1.01] active:scale-95 cursor-pointer">
               {t("footer.description")}
             </p>
