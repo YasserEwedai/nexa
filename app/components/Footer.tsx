@@ -17,21 +17,21 @@ export default function Footer() {
   return (
     <footer className="w-full py-12 sm:py-16 px-4 sm:px-6 md:px-10 lg:px-16 relative bg-[#070A12]">
       <div className="relative max-w-6xl mx-auto mt-12">
-        <div className="grid md:grid-cols-4 gap-8 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-[1.6fr_1fr_1fr_1fr] gap-8 items-start">
           {/* Column 1 */}
           <motion.div className="min-w-0">
-            <Link href="/" className="block w-fit">
+            <Link href="/" className="inline-block">
               <Image
                 src="/images/logo.png"
                 alt="Nexa Team"
-                width={300}
+                width={250}
                 height={120}
                 priority
-                className="w-[300px] h-auto object-contain"
+                className="w-[250px] md:w-[260px] lg:w-[280px] h-auto"
               />
             </Link>
 
-            <p className="text-white/80 text-sm leading-relaxed transition-all duration-300 hover:text-[#D4AF37] hover:scale-[1.01] active:scale-95 cursor-pointer">
+            <p className="mt-4 text-white/80 text-sm leading-relaxed transition-all duration-300 hover:text-[#D4AF37] hover:scale-[1.01] active:scale-95 cursor-pointer">
               {t("footer.description")}
             </p>
           </motion.div>
