@@ -13,9 +13,9 @@ import {
 
 export default function Footer() {
   const { t } = useTranslation();
-
+  // py-10  lg:py-25 xl px-4 sm:px-6 md:px-10 lg:px-16
   return (
-    <footer className="w-full py-12 sm:py-16 px-4 sm:px-6 md:px-10 lg:px-16 relative bg-[#070A12]">
+    <footer className="w-full py-5 sm:py-10 px-4 sm:px-6 md:px-10 lg:px-16 relative bg-[#070A12] ">
       <div className="relative max-w-6xl mx-auto mt-12">
         <div className="grid grid-cols-1 md:grid-cols-[1.6fr_1fr_1fr_1fr] gap-8 items-start">
           {/* Column 1 */}
@@ -24,10 +24,10 @@ export default function Footer() {
               <Image
                 src="/images/logo.png"
                 alt="Nexa Team"
-                width={250}
-                height={120}
+                width={150}
+                height={72}
                 priority
-                className="w-[250px] h-auto object-contain"
+                className="w-[150px] h-auto object-contain"
               />
             </Link>
 
