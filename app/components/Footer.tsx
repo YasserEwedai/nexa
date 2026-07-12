@@ -21,10 +21,10 @@ export default function Footer() {
               <Image
                 src="/images/logo.png"
                 alt="Nexa Team"
-                width={200}
+                width={250}
                 height={120}
                 priority
-                className="w-[200px] h-[120px] object-contain"
+                className="w-[250px] h-[120px] object-cover"
               />
             </Link>
             <p className="text-white/80 text-sm leading-relaxed transition-all duration-300 hover:text-[#D4AF37] hover:scale-[1.01] active:scale-95 cursor-pointer">
