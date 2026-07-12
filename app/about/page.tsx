@@ -1,12 +1,11 @@
+///
 "use client";
-
 import Navbar from "@/app/components/Navbar";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../components/LanguageSwitcher";
-
 const cards = [
   {
     title: "about.mission.title",
@@ -17,7 +16,6 @@ const cards = [
     desc: "about.vision.desc",
   },
 ];
-
 const choose = [
   {
     title: "about.choose.team.title",
@@ -36,7 +34,6 @@ const choose = [
     desc: "about.choose.customer.desc",
   },
 ];
-
 const statistics = [
   {
     number: "150+",
@@ -55,14 +52,12 @@ const statistics = [
     title: "about.statistics.satisfaction",
   },
 ];
-
 const process = [
   "about.process.analysis",
   "about.process.planning",
   "about.process.development",
   "about.process.support",
 ];
-
 function SectionTitle({
   label,
   title,
@@ -102,10 +97,10 @@ text-sm
           {label}
         </div>
       </div>
-
       <h2
         className="
-text-3xl
+text-2xl
+sm:text-3xl
 md:text-[42px]
 font-bold
 leading-tight
@@ -114,7 +109,6 @@ mb-5
       >
         {title}
       </h2>
-
       <p
         className="
 text-gray-400
@@ -126,10 +120,8 @@ leading-7
     </div>
   );
 }
-
 export default function AboutPage() {
   const { t } = useTranslation();
-
   return (
     <main
       className="
@@ -139,17 +131,18 @@ overflow-x-hidden
 "
     >
       <Navbar />
-
       {/* HERO */}
-
       <section
         className="
 relative
-h-[520px]
+min-h-[420px]
+sm:min-h-[460px]
+md:h-[520px]
 flex
 items-center
 justify-center
-px-6
+px-4 sm:px-6 md:px-10 lg:px-16
+py-20 md:py-0
 "
       >
         <Image
@@ -158,7 +151,6 @@ px-6
           fill
           className="object-cover"
         />
-
         <div
           className="
 absolute
@@ -166,7 +158,6 @@ inset-0
 bg-black/70
 "
         />
-
         <motion.div
           initial={{
             opacity: 0,
@@ -206,10 +197,10 @@ text-sm
               {t("about.hero.label")}
             </div>
           </div>
-
           <h1
             className="
-text-4xl
+text-3xl
+sm:text-4xl
 md:text-6xl
 font-bold
 mb-5
@@ -217,7 +208,6 @@ mb-5
           >
             {t("about.hero.title")}
           </h1>
-
           <p
             className="
 text-gray-300
@@ -228,17 +218,14 @@ leading-7
           </p>
         </motion.div>
       </section>
-
       {/* MISSION & VISION */}
-
-      <section className="py-20 px-6">
+      <section className="py-14 sm:py-16 md:py-20 px-4 sm:px-6 md:px-10 lg:px-16">
         <div className="max-w-6xl mx-auto">
           <SectionTitle
             label={t("about.purpose.label")}
             title={t("about.purpose.title")}
             desc={t("about.purpose.desc")}
           />
-
           <div className="grid md:grid-cols-2 gap-6">
             {cards.map((item, i) => (
               <motion.div
@@ -288,7 +275,6 @@ transition
 duration-500
 "
                 />
-
                 <div
                   className="
 relative
@@ -304,7 +290,6 @@ mb-3
                   >
                     {t(item.title)}
                   </h3>
-
                   <p
                     className="
 text-gray-400
@@ -320,17 +305,14 @@ transition
           </div>
         </div>
       </section>
-
       {/* WHY CHOOSE US */}
-
-      <section className="py-20 px-6">
+      <section className="py-14 sm:py-16 md:py-20 px-4 sm:px-6 md:px-10 lg:px-16">
         <div className="max-w-6xl mx-auto">
           <SectionTitle
             label={t("about.choose.label")}
             title={t("about.choose.title")}
             desc={t("about.choose.desc")}
           />
-
           <div
             className="
 grid
@@ -388,7 +370,6 @@ transition
 duration-500
 "
                 />
-
                 <div
                   className="
 relative
@@ -404,7 +385,6 @@ mb-3
                   >
                     {t(item.title)}
                   </h3>
-
                   <p
                     className="
 text-gray-400
@@ -420,17 +400,14 @@ group-hover:text-gray-200
           </div>
         </div>
       </section>
-
       {/* STATISTICS */}
-
-      <section className="py-20 px-6">
+      <section className="py-14 sm:py-16 md:py-20 px-4 sm:px-6 md:px-10 lg:px-16">
         <div className="max-w-6xl mx-auto">
           <SectionTitle
             label={t("about.statistics.label")}
             title={t("about.statistics.title")}
             desc={t("about.statistics.desc")}
           />
-
           <div
             className="
 grid
@@ -469,7 +446,8 @@ py-8
               >
                 <h3
                   className="
-text-4xl
+text-3xl
+sm:text-4xl
 font-bold
 text-[#D4AF37]
 mb-2
@@ -477,7 +455,6 @@ mb-2
                 >
                   {item.number}
                 </h3>
-
                 <p
                   className="
 text-gray-400
@@ -491,15 +468,13 @@ text-gray-400
         </div>
       </section>
       {/* HOW WE WORK */}
-
-      <section className="py-20 px-6">
+      <section className="py-14 sm:py-16 md:py-20 px-4 sm:px-6 md:px-10 lg:px-16">
         <div className="max-w-6xl mx-auto">
           <SectionTitle
             label={t("about.process.label")}
             title={t("about.process.title")}
             desc={t("about.process.desc")}
           />
-
           <div
             className="
 grid
@@ -548,20 +523,19 @@ mb-4
                 >
                   0{i + 1}
                 </div>
-
                 <p className="text-gray-200">{t(item)}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
-
       {/* CTA */}
-
       <section
         className="
-py-20
-px-6
+py-14
+sm:py-16
+md:py-20
+px-4 sm:px-6 md:px-10 lg:px-16
 text-center
 "
       >
@@ -581,7 +555,8 @@ text-center
         >
           <h2
             className="
-text-4xl
+text-3xl
+sm:text-4xl
 md:text-5xl
 font-bold
 mb-5
@@ -589,7 +564,6 @@ mb-5
           >
             {t("about.cta.title")}
           </h2>
-
           <p
             className="
 text-gray-400
@@ -600,7 +574,6 @@ mx-auto
           >
             {t("about.cta.desc")}
           </p>
-
           <Link
             href="/contact"
             className="
@@ -622,7 +595,6 @@ hover:shadow-[0_10px_25px_rgba(212,175,55,0.5)]
           </Link>
         </motion.div>
       </section>
-
       <LanguageSwitcher />
     </main>
   );

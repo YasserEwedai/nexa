@@ -1,16 +1,9 @@
 "use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { motion, type Transition } from "framer-motion";
-import {
-  FaFacebookF,
-  FaPinterestP,
-  FaYoutube,
-  FaTimes,
-} from "react-icons/fa";
+import { FaFacebookF, FaPinterestP, FaYoutube, FaTimes } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-
 const team = [
   {
     name: "Yaser Ewida",
@@ -23,7 +16,6 @@ const team = [
     image: "/images/team/kamal.jpeg",
   },
 ];
-
 const leftItem = {
   hidden: {
     x: -120,
@@ -36,13 +28,11 @@ const leftItem = {
     scale: 1,
   },
 };
-
 const leftTransition: Transition = {
   type: "spring",
   stiffness: 110,
   damping: 14,
 };
-
 export default function Team({
   showAll = false,
   showButton = true,
@@ -51,11 +41,9 @@ export default function Team({
   showButton?: boolean;
 }) {
   const { t } = useTranslation();
-
   const displayedTeam = showAll ? team : team.slice(0, 2);
-
   return (
-    <section className="bg-[#070A12] py-20 px-4 md:px-6">
+    <section className="bg-[#070A12] py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-10 lg:px-16">
       <div
         className={
           showAll
@@ -91,7 +79,6 @@ export default function Team({
               {t("team.label")}
             </div>
           </motion.div>
-
           <motion.h2
             variants={leftItem}
             transition={leftTransition}
@@ -116,7 +103,6 @@ export default function Team({
           >
             {t("team.description")}
           </motion.p>
-
           {showButton && (
             <motion.div
               variants={leftItem}
@@ -126,31 +112,30 @@ export default function Team({
               <Link
                 href="/team"
                 className="
-                inline-block
-                rounded-full
-                bg-[#A78C35]
-                px-6
-                py-3
-                text-sm
-                font-semibold
-                text-white
-                transition-all
-                duration-300
-                transform
-                hover:-translate-y-1
-                hover:scale-105
-                hover:shadow-[0_10px_25px_rgba(212,175,55,0.5)]
-                active:translate-y-0
-                active:scale-95
-                active:shadow-none
-              "
+inline-block
+rounded-full
+bg-[#A78C35]
+px-6
+py-3
+text-sm
+font-semibold
+text-white
+transition-all
+duration-300
+transform
+hover:-translate-y-1
+hover:scale-105
+hover:shadow-[0_10px_25px_rgba(212,175,55,0.5)]
+active:translate-y-0
+active:scale-95
+active:shadow-none
+"
               >
                 {t("team.button")}
               </Link>
             </motion.div>
           )}
         </motion.div>
-
         <div
           className={
             showAll
@@ -181,56 +166,53 @@ export default function Team({
                 delay: index * 0.1,
               }}
               className="
-              relative
-              overflow-hidden
-              group
-              w-full
-              h-[360px]
-              rounded-2xl
-              "
+relative
+overflow-hidden
+group
+w-full
+h-[300px]
+sm:h-[340px]
+md:h-[360px]
+rounded-2xl
+"
             >
               <Image
                 src={member.image}
                 alt={member.name}
                 fill
                 className="
-                object-cover
-                rounded-2xl
-                group-hover:scale-105
-                transition
-                duration-500
-                "
+object-cover
+rounded-2xl
+group-hover:scale-105
+transition
+duration-500
+"
               />
-
               <div
                 className="
-                absolute
-                left-[-10px]
-                right-5
-                bottom-5
-                bg-[linear-gradient(to_right,#5A4526,#D4AF37,#2F2F2F)]
-                py-4
-                px-5
-                rounded-2xl
-                shadow-2xl
-                "
+absolute
+left-[-10px]
+right-5
+bottom-5
+bg-[linear-gradient(to_right,#5A4526,#D4AF37,#2F2F2F)]
+py-4
+px-5
+rounded-2xl
+shadow-2xl
+"
               >
                 <h3 className="text-lg font-medium">{member.name}</h3>
-
                 <p className="text-sm text-white/90 mt-1">{member.role}</p>
                 <div className="flex gap-3 mt-4">
                   <a className="w-8 h-8 flex items-center justify-center rounded-full border border-white/70">
                     <FaFacebookF size={14} />
                   </a>
-
                   <a className="w-8 h-8 flex items-center justify-center rounded-full border border-white/70">
                     <FaTimes size={13} />
                   </a>
-
                   <a className="w-8 h-8 flex items-center justify-center rounded-full border border-white/70">
                     <FaPinterestP size={14} />
                   </a>
-
                   <a className="w-8 h-8 flex items-center justify-center rounded-full border border-white/70">
                     <FaYoutube size={14} />
                   </a>
