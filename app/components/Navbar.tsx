@@ -4,29 +4,13 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
-import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import Image from "next/image";
 export default function Navbar() {
-  const [openOther, setOpenOther] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [mobileOtherOpen, setMobileOtherOpen] = useState(false);
   const pathname = usePathname();
   const { t } = useTranslation();
-  const dropdownRef = useRef<HTMLDivElement>(null);
 
-  // Close desktop "training" dropdown on outside click
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target as Node)
-      ) {
-        setOpenOther(false);
-      }
-    }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
 
   // Close dropdown/mobile menu on scroll
   useEffect(() => {
@@ -71,14 +55,10 @@ export default function Navbar() {
     { href: "/services", label: t("navbar.services") },
     { href: "/projects", label: t("navbar.projects") },
     { href: "/team", label: t("navbar.team") },
+    { href: "/training", label: t("navbar.training") },
     { href: "/contact", label: t("navbar.contact") },
   ];
 
-  const otherItems = [
-    { href: "/#choose-us", label: t("navbar.chooseUs") },
-    { href: "/#Blog", label: t("navbar.latestArticle") },
-    { href: "/#faqs", label: t("navbar.faqs") },
-  ];
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-[#070A12]">
@@ -107,36 +87,6 @@ export default function Navbar() {
                 {item.label}
               </Link>
             ))}
-
-            <div className="relative" ref={dropdownRef}>
-              <button
-                onClick={() => setOpenOther(!openOther)}
-                className="flex items-center gap-1 hover:text-[#D0AC37] active:text-[#5A4526] transition"
-                aria-expanded={openOther}
-                aria-haspopup="true"
-              >
-                {t("navbar.training")}
-                <FaChevronDown
-                  size={14}
-                  className={`transition-transform duration-300 ${
-                    openOther ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-              {openOther && (
-                <div className="absolute top-8 left-0 w-52 bg-[#111827] border border-white/10 rounded-xl shadow-xl p-4">
-                  <ul className="flex flex-col gap-3">
-                    {otherItems.map((item) => (
-                      <li key={item.href}>
-                        <Link href={item.href} className={linkStyle(item.href)}>
-                          {item.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </div>
           </nav>
 
           {/* Right side: CTA (desktop) + hamburger (mobile/tablet) */}
@@ -203,35 +153,6 @@ export default function Navbar() {
           ))}
 
           {/* Collapsible "training / other" group */}
-          <button
-            type="button"
-            onClick={() => setMobileOtherOpen((v) => !v)}
-            className="flex items-center justify-between w-full py-3 text-base text-gray-300 border-b border-white/5 hover:text-[#D0AC37] transition-all duration-300"
-            aria-expanded={mobileOtherOpen}
-          >
-            {t("navbar.training")}
-            <FaChevronDown
-              size={16}
-              className={`transition-transform duration-300 ${
-                mobileOtherOpen ? "rotate-180" : ""
-              }`}
-            />
-          </button>
-          <div
-            className={`overflow-hidden transition-[max-height] duration-300 ease-in-out ${
-              mobileOtherOpen ? "max-h-60" : "max-h-0"
-            }`}
-          >
-            <ul className="flex flex-col pl-4">
-              {otherItems.map((item) => (
-                <li key={item.href}>
-                  <Link href={item.href} className={mobileLinkStyle(item.href)}>
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
 
           <Link
             href="/contact"
