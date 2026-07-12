@@ -1,35 +1,38 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Image from "next/image";
+
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+
   const pathname = usePathname();
   const { t } = useTranslation();
 
-
-  // Close dropdown/mobile menu on scroll
+  // Close mobile menu on scroll
   useEffect(() => {
     function handleScroll() {
-      setOpenOther(false);
+      setMobileOpen(false);
     }
+
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close the mobile menu whenever the route changes
+  // Close mobile menu when route changes
   useEffect(() => {
     setMobileOpen(false);
-    setMobileOtherOpen(false);
   }, [pathname]);
 
-  // Lock body scroll while the mobile menu is open
+  // Lock body scroll when mobile menu is open
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
+
     return () => {
       document.body.style.overflow = "";
     };
@@ -59,7 +62,6 @@ export default function Navbar() {
     { href: "/contact", label: t("navbar.contact") },
   ];
 
-
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-[#070A12]">
       <div className="backdrop-blur-md bg-[#070A12]/70 border-b border-white/10">
@@ -76,7 +78,7 @@ export default function Navbar() {
             />
           </Link>
 
-          {/* Desktop nav (lg and up) */}
+          {/* Desktop Navigation */}
           <nav className="hidden lg:flex gap-6 xl:gap-8 text-sm text-gray-300 items-center">
             {navItems.map((item) => (
               <Link
@@ -89,7 +91,7 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* Right side: CTA (desktop) + hamburger (mobile/tablet) */}
+          {/* CTA + Mobile Button */}
           <div className="flex items-center gap-3">
             <Link
               href="/contact"
@@ -117,11 +119,22 @@ export default function Navbar() {
               {t("navbar.freeConsultation")}
             </Link>
 
-            {/* Hamburger toggle — visible below lg */}
             <button
               type="button"
-              onClick={() => setMobileOpen((v) => !v)}
-              className="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg text-white hover:text-[#D0AC37] hover:bg-white/5 transition-colors"
+              onClick={() => setMobileOpen((prev) => !prev)}
+              className="
+                lg:hidden
+                inline-flex
+                items-center
+                justify-center
+                w-10
+                h-10
+                rounded-lg
+                text-white
+                hover:text-[#D0AC37]
+                hover:bg-white/5
+                transition-colors
+              "
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileOpen}
               aria-controls="mobile-menu"
@@ -132,7 +145,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile / tablet slide-down menu (below lg) */}
+      {/* Mobile Menu */}
       <div
         id="mobile-menu"
         className={`lg:hidden overflow-hidden transition-[max-height,opacity] duration-300 ease-in-out bg-[#070A12]/95 backdrop-blur-md border-b border-white/10 ${
@@ -151,8 +164,6 @@ export default function Navbar() {
               {item.label}
             </Link>
           ))}
-
-          {/* Collapsible "training / other" group */}
 
           <Link
             href="/contact"
