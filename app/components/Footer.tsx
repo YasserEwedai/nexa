@@ -1,6 +1,8 @@
 "use client";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 import {
   FaFacebookF,
   FaTwitter,
@@ -15,9 +17,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Column 1 */}
           <motion.div>
-            <h2 className="text-lg font-bold mb-3 text-white transition-all duration-300 hover:text-[#D4AF37] hover:scale-[1.03] active:scale-95 cursor-pointer">
-              {t("footer.team")}
-            </h2>
+            <Image
+              src="/images/logo.png"
+              alt="Nexa Team"
+              width={160}
+              height={50}
+              priority
+              className="h-12 w-auto mb-3 transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer"
+            />
             <p className="text-white/80 text-sm leading-relaxed transition-all duration-300 hover:text-[#D4AF37] hover:scale-[1.01] active:scale-95 cursor-pointer">
               {t("footer.description")}
             </p>

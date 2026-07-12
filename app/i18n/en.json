@@ -1,6 +1,5 @@
 {
   "footer": {
-    "team": "Nexa Team",
     "description": "We have rapidly grown into a trusted partner for organizations seeking digital transformation, enhanced operational efficiency.",
     "quickLinks": "Quick Links",
     "home": "Home",
@@ -47,7 +46,6 @@
   },
 
   "navbar": {
-    "logo": "Nexa Team",
     "home": "Home",
     "about": "About",
     "services": "Services",
