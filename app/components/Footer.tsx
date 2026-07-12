@@ -24,10 +24,10 @@ export default function Footer() {
               <Image
                 src="/images/logo.png"
                 alt="Nexa Team"
-                width={250}
-                height={120}
+                width={300}
+                height={150}
                 priority
-                className="w-[250px] h-[120px] object-contain"
+                className="w-[300px] h-[150px] object-contain"
               />
             </Link>
 
