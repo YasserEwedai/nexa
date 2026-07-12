@@ -87,7 +87,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="shrink-0">
             <Image
-              src="/public/images/logo.jpeg"
+              src="/images/logo.jpeg"
               alt="Nexa Team"
               width={150}
               height={45}
