@@ -43,7 +43,7 @@ export default function Services({
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight">
             {t("services.titleLine1")}
-            <br />
+            <br className="hidden md:block" />
             {t("services.titleLine2")}
           </h2>
           <p className="text-gray-400 max-w-xl">{t("services.description")}</p>
