@@ -166,7 +166,6 @@ export default function Hero() {
             autoplay={{
               delay: 2000,
               disableOnInteraction: false,
-              reverseDirection: true,
             }}
             breakpoints={{
               320: {
